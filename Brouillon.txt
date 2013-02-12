@@ -1,0 +1,200 @@
+﻿-Brouillon 
+
+
+
+
+tel daniela 353 864142483
+
+
+
+
+=== todo perso ===
+
+changement de caisse: attendre réponse
+nouvelle carte vitale
+complémentaire: envoyer changement de caisse + ajout Céline
+
+
+apprendre des langues
+    -> site internet (duolingo, babbel)
+    -> appli tel
+    -> trouver appli, site pour hongrois, japonais, arabe
+
+
+
+
+=== planning: ===
+
+
+13h00
+        latinS
+
+16h00
+        recommandation letter
+
+
+
+=== soon: ===
+
+
+
+admin
+    article johanna
+    regarder projet johanna
+    recommendation romain 
+
+
+Recherche
+    LatinSquare
+    gobit
+    nested + ucb
+
+
+
+Cours        
+    Learning
+    attribution de taches
+    vim-fugitive
+    trouver autres plugin
+
+
+
+
+=== later: ===
+
+admin
+    research
+    Nested Bandit
+    Carré latin
+
+
+
+
+learning
+    classe de complexité
+    simplex(prog: Cplex)
+    lyapunov
+    kalman filter
+    log dominance
+    preuve de programme
+    arbre de steiner
+
+
+
+cours
+    préparation TP FISDA
+  
+
+
+  
+
+
+
+
+=== Projets: ===
+
+tree search
+    solving
+    searching
+    publi?
+    -> appli
+
+
+
+Go program
+
+
+carré latin
+
+
+optim
+        utiliser pour aider autre chose
+
+
+unlimited learning (decomposition en sous probleme)
+    -> go
+    -> language comprehension
+    -> analyze web
+
+
+domaine:
+    Graph theory
+    Game theory
+    Optimisation
+
+    Monte Carlo
+    Complexité
+    Algo
+    Tree Search
+
+    machine learning (prediction, classification,...)
+    fouille de donnée
+    decomposition en sous probleme
+    unlimited learning
+
+applications:
+    games
+    network
+    turing test
+
+
+
+
+
+
+
+
+
+
+
+
+
+=== Achats ===
+
+
+imprimante
+
+porte manteau
+meuble entrée
+
+pantalons
+
+BD calvin
+Livres
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=== Liens Maths ===
+
+
+
+Internationnal Congress of mathematicians:
+once every four years, donne les medailles fields
+http://videos.icm2010.in/
+http://www.mathunion.org/ICM/ICM2006.1/
+
+ANNALS OF MATHEMATICS
+http://annals.math.princeton.edu/
+
+ACTA MATHEMATICA
+
+COMMUNICATIONS ON PURE AND APPLIED MATHEMATICS
+
+ADVANCES IN MATHEMATICS
+
+INVENTIONES MATHEMATICAE
+
+DUKE MATHEMATICAL JOURNAL
+
+ANNALES SCIENTIFIQUES DE L ECOLE NORMALE SUPERIEURE

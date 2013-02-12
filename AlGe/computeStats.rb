@@ -19,7 +19,7 @@ end
 def launchProg()
     cmd = "./latinSquare"
     value = `#{cmd}`
-    res = value.scan(/Score : (\d*)/)[0][0].to_i   # res is the first (and only) match
+    res = value.scan(/Score: (\d*)/)[0][0].to_i   # res is the first (and only) match
     return res
 end
 
@@ -41,8 +41,10 @@ end
 
 listRes = []
 listTime = []
+puts "coucou"
 for i in 1..nbrun
     printf("\r%i / %i",i,nbrun )
+    STDOUT.flush
     startt = Time.now
     res = launchProg()
     listRes.push(res)
