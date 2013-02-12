@@ -4,6 +4,8 @@ using namespace std;
 
 LS population[LAMBDA];
 
+// test for git
+
 void initPopulation()
 {
     short indiceCoup[DIM];
