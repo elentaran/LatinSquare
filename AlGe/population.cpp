@@ -1,21 +1,16 @@
 #include "population.h"
 
+extern double percentBest;
+extern double percentGood;
+
 Pop::Pop() {
     init();
 }
 
 void Pop::init()
 {
-    short indiceCoup[DIM];
 	for (short p=0; p<LAMBDA; p++)
-	{
-		for (short i=0; i<LARGEUR; i++)
-		{
-			population[p].genOneRandom(indiceCoup);
-			population[p].add(indiceCoup);
-		}
-		population[p].score = population[p].computeMinDist();
-	}
+        population[p].initRand();
 	for (short p=LAMBDA; p<LAMBDA*2; p++)
 		population[p].initDiagonal();
 }
@@ -23,6 +18,7 @@ void Pop::init()
 void Pop::print()
 {
     cout<<"Score: " << population[0].score<<endl;
+    cout<<"Fake: " << population[0].fakeScore<<endl;
 }
 
 
@@ -42,7 +38,7 @@ void Pop::evolve()
 	{
 		if (generation%int(GENERATIONS/100)==0)
 		{
-			cout<<generation/int(GENERATIONS/100)<<"% ("<<population[0].score<<")"<<endl;
+			cout<<generation/int(GENERATIONS/100)<<"% ("<<population[0].score<<")" << "(" << population[0].fakeScore << ")"<<endl;
 		}
 		generate();
 		select();
@@ -63,46 +59,26 @@ void Pop::evolve()
 
 void Pop::generate()
 {
-	short j=0;
-	short compteur=1;
+    short nbGenFromBest = percentBest * LAMBDA;
+    short nbGenFromGood = percentGood * LAMBDA;
+    //short nbGenFromBest = 0.5 * LAMBDA;
+    //short nbGenFromGood = 0.5 * LAMBDA;
+
 	for (short i=0; i<LAMBDA; i++)
 	{
-		if ((LAMBDA==1)||(i<LAMBDA/4))
+		if (i<nbGenFromGood)
 		{
+            population[i+LAMBDA]=population[i];
+            population[i+LAMBDA].mutate();
+		}
+		else if (i<nbGenFromGood + nbGenFromBest)
+        {
 			population[i+LAMBDA]=population[0];
 			population[i+LAMBDA].mutate();
-		}
-		else
-		{
-			if (i<1*(LAMBDA/2))
-			{
-				//	population[i+LAMBDA]=population[j++];
-				population[i+LAMBDA]=population[i];
-                population[i+LAMBDA].mutate();
-				//		if ((compteur++%10)==0) 
-				//		{
-				//			j++;
-				//			compteur=1;
-				//		}
-			}
-			else
-				//			if (i<1*(LAMBDA/5))
-				//			{
-				//					population[i+LAMBDA]=population[0];
-				//					mutate(population[i+LAMBDA]);
-				//				}
-				//				else
-			{
-				population[i+LAMBDA].reinit();
-				short indiceCoup[DIM];
-				for (short j=0; j<LARGEUR; j++)
-				{
-					population[i+LAMBDA].genOneRandom(indiceCoup);
-					population[i+LAMBDA].add(indiceCoup);
-				}
-				population[i+LAMBDA].score = population[i+LAMBDA].computeMinDist();
-
-			}
+        } 
+        else 
+        {
+            population[i+LAMBDA].initRand();
 		}
 	}
 }
@@ -111,12 +87,20 @@ void Pop::generate()
 int Pop::part(int p, int r)
 {
 	short compt=p;
+#ifdef FAKESCORE
+	double pivot=population[p].fakeScore;
+#else
 	short pivot=population[p].score;
+#endif
 	int i;
 
 	for (i=p+1; i<=r; i++)
 	{
+#ifdef FAKESCORE
+		if ( population[i].fakeScore > pivot )
+#else
 		if ( population[i].score > pivot )
+#endif
 		{
 			compt++;
 			LS temp;

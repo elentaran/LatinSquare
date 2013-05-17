@@ -1,7 +1,7 @@
 #include "fastLS.h"
 
-#define LAMBDA 1000
-#define GENERATIONS 10000
+#define LAMBDA 100
+#define GENERATIONS 100
 
 class Pop{
 

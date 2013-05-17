@@ -9,7 +9,8 @@ LS::LS()
 
 void LS::reinit()
 {
-	score=-1;
+	score=-1000;
+    fakeScore=-1000;
 	nbAdded=0;
 	for (short i=0; i<DIM; i++)
 	{
@@ -59,6 +60,9 @@ void LS::initDiagonal()
 		for (short j=0; j<DIM; j++)
 			hypercube[i][j]=i;
 	score=computeMinDist();
+#ifdef FAKESCORE
+    fakeScore=computeFakeScore();
+#endif
 }
 
 string LS::toString() {
@@ -80,6 +84,9 @@ void LS::print()
 	cout<< "Printing a solution"<<endl;
 	cout << toString();
 	cout << endl << "Score : "<<score<<endl;
+#ifdef FAKESCORE
+	cout << "Fake Score : "<<fakeScore<<endl;
+#endif
 }
 
 // compute the value of the current LS
@@ -87,7 +94,7 @@ void LS::print()
 void LS::updateBest() {
 	double bestVal = readBest();
 	if (score > bestVal) {
-		cout << "new reccord!!: " << score << endl;
+		cerr << "new reccord!!: " << score << endl;
 		writeBest();
 	}
 }
@@ -162,6 +169,71 @@ short LS::computeMinDist()
 	return minDist;
 }
 
+short part(short myVec[], short beg, short end) {
+	short compt=beg;
+	short pivot=myVec[beg];
+	int i;
+
+	for (i=beg+1; i<=end; i++)
+	{
+		if ( myVec[i] > pivot )
+		{
+			compt++;
+			short temp = myVec[i];
+			myVec[i] = myVec[compt];
+			myVec[compt] = temp;
+		}
+	}
+	short temp;
+	temp = myVec[beg];
+	myVec[beg] = myVec[compt];
+	myVec[compt] = temp;
+	return compt;
+}
+
+void quicksort(short myVec[], short beg, short end) {
+	short q;
+	if (beg<end)
+	{
+		q = part(myVec, beg, end);
+		quicksort(myVec, beg, q-1);
+		quicksort(myVec, q+1, end);
+	}
+}
+
+double LS::computeFakeScore() {
+    int max = LARGEUR*LARGEUR*DIM;
+	short curDist;
+	short minDistAll = 10000;
+	short minDist;
+    double sumDist = 0;
+    short listMinDist[LARGEUR];
+	for (int i=0; i<LARGEUR; i++)
+	{
+        minDist = 10000;
+		for (int j=0; j<LARGEUR; j++)
+		{
+            if (i!=j) {
+                curDist = computeDist(hypercube[i],hypercube[j]);
+                assert(curDist >= DIM);
+                if (curDist < minDist)
+                    minDist = curDist;
+                if (curDist < minDistAll)
+                    minDistAll = curDist;
+            }
+		}
+        listMinDist[i] = minDist;
+        //sumDist+=minDist;
+	}
+
+    quicksort(listMinDist,0,LARGEUR);
+	for (int i=0; i<LARGEUR; i++) {
+        sumDist += (double) listMinDist[i]*i;
+    }
+	return sumDist;
+
+}
+
 void LS::mutate()
 {
 	for (short i=0; i<DIM; i++)
@@ -180,7 +252,22 @@ void LS::mutate()
 			hypercube[valeur1][probaMutationDim] = hypercube[valeur2][probaMutationDim];
 			hypercube[valeur2][probaMutationDim] = temp;
 			score = computeMinDist();
+#ifdef FAKESCORE
+            fakeScore = computeFakeScore();
+#endif
 		}
 	}
 }
 
+void LS::initRand() {
+
+    reinit();
+    short indiceCoup[DIM];
+    for (short i=0; i<LARGEUR; i++)
+    {
+        genOneRandom(indiceCoup);
+        add(indiceCoup);
+    }
+    score = computeMinDist();
+
+}
