@@ -27,7 +27,7 @@ void Pop::evolve()
 #ifdef RESTART
 	for (short restart=0; restart<1000; restart++)
 	{
-		cerr<<"Restart"<<population[0].score<<endl;
+		cerr<<"Restart"<<endl;
 #endif
     double bestVal = population[0].readBest();
 	for (short l=0; l<LAMBDA; l++)
