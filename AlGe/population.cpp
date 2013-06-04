@@ -24,9 +24,11 @@ void Pop::print()
 
 void Pop::evolve()
 {
-	//for (short restart=0; restart<1000; restart++)
-	//{
-	//	cerr<<"Restart"<<population[0].score<<endl;
+#ifdef RESTART
+	for (short restart=0; restart<1000; restart++)
+	{
+		cerr<<"Restart"<<population[0].score<<endl;
+#endif
     double bestVal = population[0].readBest();
 	for (short l=0; l<LAMBDA; l++)
 		population[l].reinit();
@@ -55,7 +57,9 @@ void Pop::evolve()
 					stagne=0;
 				}
 	}
-	//}
+#ifdef RESTART
+	}
+#endif
 }
 
 void Pop::generate()
