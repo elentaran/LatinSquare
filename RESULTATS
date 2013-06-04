@@ -13,4 +13,9 @@ GEN     1000
 COMMA   OFF
     99.37 +- 1.3077516404621 (1.16355887s)
 
+Best results:
+LAMBDA  30
+GEN     1000
+fakescore ordre*i
+   113.77 +- 0.800096328543942 (1.20336683s) 
 

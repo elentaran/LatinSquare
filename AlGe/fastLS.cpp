@@ -96,6 +96,14 @@ void LS::updateBest() {
 	if (score > bestVal) {
 		cerr << "new reccord!!: " << score << endl;
 		writeBest();
+#ifdef SENDMAIL
+                stringstream message;
+                message << "./sendMail.rb ";
+                message << "'new value: "<< score << "'";
+                message << " 'new highscore LS'";
+                system(message.str().c_str());
+                cerr << "mail sent" << endl;
+#endif
 	}
 }
 

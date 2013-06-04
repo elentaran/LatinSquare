@@ -39,9 +39,10 @@ def ciArray(list)
     return 1.96*s/Math.sqrt(list.size)
 end
 
+
 def printRes(listRes,listTime)
     for i in 0...listRes.length
-        puts meanArray(listRes[i]).to_s + " +- " + ciArray(listRes[i]).to_s # + " (" + listRes[i].length.to_s + ")"
+        puts meanArray(listRes[i]).to_s + " +- " + ciArray(listRes[i]).to_s + " (sd: " + sdArray(listRes[i]).to_s + ") (max: " + listRes[i].max.to_s + ")"
     end
     puts meanArray(listTime).to_s + "s"
 end

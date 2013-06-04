@@ -13,6 +13,7 @@ using namespace std;
 #define RECCORD_REP "reccord/"
 
 #define FAKESCORE
+#define SENDMAIL
 
 
 class LS

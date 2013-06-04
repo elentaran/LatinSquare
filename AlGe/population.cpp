@@ -18,7 +18,7 @@ void Pop::init()
 void Pop::print()
 {
     cout<<"Score: " << population[0].score<<endl;
-    cout<<"Fake: " << population[0].fakeScore<<endl;
+    //cout<<"Fake: " << population[0].fakeScore<<endl;
 }
 
 
@@ -27,32 +27,33 @@ void Pop::evolve()
 	//for (short restart=0; restart<1000; restart++)
 	//{
 	//	cerr<<"Restart"<<population[0].score<<endl;
+    double bestVal = population[0].readBest();
 	for (short l=0; l<LAMBDA; l++)
 		population[l].reinit();
 	init();
 	int generation=0;
-	//	short previous = population[0].score;
-	//	short stagne = 0;
-	//	while (stagne<1000)
-	while (generation<GENERATIONS)
+    double previous = population[0].fakeScore;
+	short stagne = 0;
+    while (stagne<500)
+	//while (generation<GENERATIONS)
 	{
 		if (generation%int(GENERATIONS/100)==0)
 		{
-			cout<<generation/int(GENERATIONS/100)<<"% ("<<population[0].score<<")" << "(" << population[0].fakeScore << ")"<<endl;
+            cout<<generation/int(GENERATIONS/100)<<"% (real: "<<population[0].score<<"/"<<bestVal<<")(fake: " << population[0].fakeScore << ")"<<endl;
 		}
 		generate();
 		select();
 		population[0].updateBest();
 		generation++;
-		//		if (population[0].score==previous)
-		//		{
-		//			stagne++;
-		//		}
-		//		else
-		//		{
-		//			previous=population[0].score;
-		//			stagne=0;
-		//		}
+				if (population[0].fakeScore<=previous)
+				{
+					stagne++;
+				}
+				else
+				{
+					previous=population[0].fakeScore;
+					stagne=0;
+				}
 	}
 	//}
 }
