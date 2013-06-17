@@ -4,6 +4,7 @@
 #include<stdlib.h>
 #include<assert.h>
 #include<cmath>
+#include<cstring>
 
 using namespace std;
 

@@ -51,10 +51,10 @@ begin
 
     listRes = []
     listTime = []
-    puts "coucou"
+    STDERR.puts "coucou"
     for i in 1..nbrun
-        printf("\r%i / %i",i,nbrun )
-        STDOUT.flush
+        STDERR.printf("\r%i / %i",i,nbrun )
+        STDERR.flush
         startt = Time.now
         res = launchProg()
         if (res.length>listRes.length)
@@ -68,11 +68,11 @@ begin
         endt = Time.now
         listTime.push(endt-startt)
     end
-    puts ""
+    STDERR.puts ""
     printRes(listRes,listTime)
 
 rescue Exception => e
-    puts ""
+    STDERR.puts ""
     if (i>2)
         printRes(listRes,listTime)
     else
