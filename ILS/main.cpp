@@ -32,7 +32,6 @@ int main(int nbArgs, char* args[]) {
     Ils myILS;
     myILS.runILS();
     myILS.print();
-    //cout << "nb eval: " << nbEval << endl;
-    cout << "Score: " << nbEval << endl;
+    cout << "nb eval: " << nbEval << endl;
 }
 

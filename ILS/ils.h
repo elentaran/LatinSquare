@@ -5,7 +5,7 @@
 //
 
 #ifndef NBEVAL
-    #define NBEVAL 100000
+    #define NBEVAL 10000
 #endif
 
 class Ils{
