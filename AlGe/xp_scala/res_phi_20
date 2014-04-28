@@ -1,0 +1,168 @@
+param = -DLAMBDA=63 -DGEN=158 -DDIM=4 -DLARGEUR=25
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=63 -DGEN=158 -DDIM=4 -DLARGEUR=25 »
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=4 -DLARGEUR=25 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=4 -DLARGEUR=25 -c main.cpp -o main.o 
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=4 -DLARGEUR=25 -c population.cpp -o population.o 
+g++ fastLS.o main.o population.o   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=4 -DLARGEUR=25 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=63 -DGEN=158 -DDIM=4 -DLARGEUR=25 »
+139.9 +- 2.55469206667957 (sd: 4.1217579852399) (max: 147)
+0.2656824s
+
+param = -DLAMBDA=63 -DGEN=158 -DDIM=9 -DLARGEUR=10
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=63 -DGEN=158 -DDIM=9 -DLARGEUR=10 »
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=9 -DLARGEUR=10 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=9 -DLARGEUR=10 -c main.cpp -o main.o 
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=9 -DLARGEUR=10 -c population.cpp -o population.o 
+g++ fastLS.o main.o population.o   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=9 -DLARGEUR=10 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=63 -DGEN=158 -DDIM=9 -DLARGEUR=10 »
+147.6 +- 2.88059993751302 (sd: 4.6475800154489) (max: 152)
+0.1108883s
+
+param = -DLAMBDA=63 -DGEN=158 -DDIM=8 -DLARGEUR=20
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=63 -DGEN=158 -DDIM=8 -DLARGEUR=20 »
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=8 -DLARGEUR=20 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=8 -DLARGEUR=20 -c main.cpp -o main.o 
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=8 -DLARGEUR=20 -c population.cpp -o population.o 
+g++ fastLS.o main.o population.o   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=8 -DLARGEUR=20 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=63 -DGEN=158 -DDIM=8 -DLARGEUR=20 »
+381.4 +- 2.5837660712826 (sd: 4.16866618689693) (max: 392)
+0.3269094s
+
+param = -DLAMBDA=63 -DGEN=158 -DDIM=4 -DLARGEUR=25
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=63 -DGEN=158 -DDIM=4 -DLARGEUR=25 »
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=4 -DLARGEUR=25 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=4 -DLARGEUR=25 -c main.cpp -o main.o 
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=4 -DLARGEUR=25 -c population.cpp -o population.o 
+g++ fastLS.o main.o population.o   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=4 -DLARGEUR=25 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=63 -DGEN=158 -DDIM=4 -DLARGEUR=25 »
+142.852 +- 0.208916669915468 (sd: 3.37067611280845) (max: 153)
+0.376113191999999s
+
+param = -DLAMBDA=63 -DGEN=158 -DDIM=9 -DLARGEUR=10
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=63 -DGEN=158 -DDIM=9 -DLARGEUR=10 »
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=9 -DLARGEUR=10 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=9 -DLARGEUR=10 -c main.cpp -o main.o 
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=9 -DLARGEUR=10 -c population.cpp -o population.o 
+g++ fastLS.o main.o population.o   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=9 -DLARGEUR=10 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=63 -DGEN=158 -DDIM=9 -DLARGEUR=10 »
+148.756 +- 0.202546281868364 (sd: 3.26789582807396) (max: 155)
+0.174198235s
+
+param = -DLAMBDA=63 -DGEN=158 -DDIM=8 -DLARGEUR=20
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=63 -DGEN=158 -DDIM=8 -DLARGEUR=20 »
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=8 -DLARGEUR=20 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=8 -DLARGEUR=20 -c main.cpp -o main.o 
+g++   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=8 -DLARGEUR=20 -c population.cpp -o population.o 
+g++ fastLS.o main.o population.o   -O2 -DLAMBDA=63 -DGEN=158 -DDIM=8 -DLARGEUR=20 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=63 -DGEN=158 -DDIM=8 -DLARGEUR=20 »
+383.077 +- 0.306948744720492 (sd: 4.95233244003234) (max: 400)
+0.520767229s
+
+param = -DLAMBDA=200 -DGEN=500 -DDIM=4 -DLARGEUR=25
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=200 -DGEN=500 -DDIM=4 -DLARGEUR=25 »
+g++   -O2 -DLAMBDA=200 -DGEN=500 -DDIM=4 -DLARGEUR=25 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DLAMBDA=200 -DGEN=500 -DDIM=4 -DLARGEUR=25 -c main.cpp -o main.o 
+g++   -O2 -DLAMBDA=200 -DGEN=500 -DDIM=4 -DLARGEUR=25 -c population.cpp -o population.o 
+g++ fastLS.o main.o population.o   -O2 -DLAMBDA=200 -DGEN=500 -DDIM=4 -DLARGEUR=25 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=200 -DGEN=500 -DDIM=4 -DLARGEUR=25 »
+162.104 +- 0.228983309895308 (sd: 3.69443268078237) (max: 173)
+4.272200251s
+
+param = -DLAMBDA=200 -DGEN=500 -DDIM=9 -DLARGEUR=10
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=200 -DGEN=500 -DDIM=9 -DLARGEUR=10 »
+g++   -O2 -DLAMBDA=200 -DGEN=500 -DDIM=9 -DLARGEUR=10 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DLAMBDA=200 -DGEN=500 -DDIM=9 -DLARGEUR=10 -c main.cpp -o main.o 
+g++   -O2 -DLAMBDA=200 -DGEN=500 -DDIM=9 -DLARGEUR=10 -c population.cpp -o population.o 
+g++ fastLS.o main.o population.o   -O2 -DLAMBDA=200 -DGEN=500 -DDIM=9 -DLARGEUR=10 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=200 -DGEN=500 -DDIM=9 -DLARGEUR=10 »
+152.912 +- 0.131316266362592 (sd: 2.11866579354666) (max: 157)
+1.692999905s
+
+param = -DLAMBDA=200 -DGEN=500 -DDIM=8 -DLARGEUR=20
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=200 -DGEN=500 -DDIM=8 -DLARGEUR=20 »
+g++   -O2 -DLAMBDA=200 -DGEN=500 -DDIM=8 -DLARGEUR=20 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DLAMBDA=200 -DGEN=500 -DDIM=8 -DLARGEUR=20 -c main.cpp -o main.o 
+g++   -O2 -DLAMBDA=200 -DGEN=500 -DDIM=8 -DLARGEUR=20 -c population.cpp -o population.o 
+g++ fastLS.o main.o population.o   -O2 -DLAMBDA=200 -DGEN=500 -DDIM=8 -DLARGEUR=20 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=200 -DGEN=500 -DDIM=8 -DLARGEUR=20 »
+413.083 +- 0.243794240393922 (sd: 3.93339326569091) (max: 424)
+5.112721313s
+
+param = -DLAMBDA=630 -DGEN=1580 -DDIM=4 -DLARGEUR=25
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=630 -DGEN=1580 -DDIM=4 -DLARGEUR=25 »
+g++   -O2 -DLAMBDA=630 -DGEN=1580 -DDIM=4 -DLARGEUR=25 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DLAMBDA=630 -DGEN=1580 -DDIM=4 -DLARGEUR=25 -c main.cpp -o main.o 
+g++   -O2 -DLAMBDA=630 -DGEN=1580 -DDIM=4 -DLARGEUR=25 -c population.cpp -o population.o 
+g++ fastLS.o main.o population.o   -O2 -DLAMBDA=630 -DGEN=1580 -DDIM=4 -DLARGEUR=25 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=630 -DGEN=1580 -DDIM=4 -DLARGEUR=25 »
+168.45 +- 0.227503347168725 (sd: 3.67055485900607) (max: 179)
+26.62342328s
+
+param = -DLAMBDA=630 -DGEN=1580 -DDIM=9 -DLARGEUR=10
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=630 -DGEN=1580 -DDIM=9 -DLARGEUR=10 »
+g++   -O2 -DLAMBDA=630 -DGEN=1580 -DDIM=9 -DLARGEUR=10 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DLAMBDA=630 -DGEN=1580 -DDIM=9 -DLARGEUR=10 -c main.cpp -o main.o 
+g++   -O2 -DLAMBDA=630 -DGEN=1580 -DDIM=9 -DLARGEUR=10 -c population.cpp -o population.o 
+g++ fastLS.o main.o population.o   -O2 -DLAMBDA=630 -DGEN=1580 -DDIM=9 -DLARGEUR=10 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=630 -DGEN=1580 -DDIM=9 -DLARGEUR=10 »
+154.17 +- 0.0685810784715752 (sd: 1.1064918998006) (max: 158)
+10.304364795s
+
+param = -DLAMBDA=630 -DGEN=1580 -DDIM=8 -DLARGEUR=20
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=630 -DGEN=1580 -DDIM=8 -DLARGEUR=20 »
+g++   -O2 -DLAMBDA=630 -DGEN=1580 -DDIM=8 -DLARGEUR=20 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DLAMBDA=630 -DGEN=1580 -DDIM=8 -DLARGEUR=20 -c main.cpp -o main.o 
+g++   -O2 -DLAMBDA=630 -DGEN=1580 -DDIM=8 -DLARGEUR=20 -c population.cpp -o population.o 
+g++ fastLS.o main.o population.o   -O2 -DLAMBDA=630 -DGEN=1580 -DDIM=8 -DLARGEUR=20 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/AlGe/xp_scala/temp-DLAMBDA=630 -DGEN=1580 -DDIM=8 -DLARGEUR=20 »
+421.177 +- 0.219609452495163 (sd: 3.54319421217992) (max: 431)
+31.633900092s
+

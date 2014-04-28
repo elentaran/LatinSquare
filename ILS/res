@@ -1,0 +1,135 @@
+param = -DNBEVAL=10000  -DDIM=9 -DLARGEUR=10
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=10000  -DDIM=9 -DLARGEUR=10 »
+g++   -O2 -DNBEVAL=10000  -DDIM=9 -DLARGEUR=10 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DNBEVAL=10000  -DDIM=9 -DLARGEUR=10 -c ils.cpp -o ils.o 
+g++   -O2 -DNBEVAL=10000  -DDIM=9 -DLARGEUR=10 -c main.cpp -o main.o 
+g++ fastLS.o ils.o main.o   -O2 -DNBEVAL=10000  -DDIM=9 -DLARGEUR=10 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=10000  -DDIM=9 -DLARGEUR=10 »
+149.418 +- 0.177067721676368 (sd: 2.85682296221475) (max: 153)
+10000.0 +- 0.0 (sd: 0.0) (max: 10000)
+0.04357724s
+
+param = -DNBEVAL=10000  -DDIM=8 -DLARGEUR=20
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=10000  -DDIM=8 -DLARGEUR=20 »
+g++   -O2 -DNBEVAL=10000  -DDIM=8 -DLARGEUR=20 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DNBEVAL=10000  -DDIM=8 -DLARGEUR=20 -c ils.cpp -o ils.o 
+g++   -O2 -DNBEVAL=10000  -DDIM=8 -DLARGEUR=20 -c main.cpp -o main.o 
+g++ fastLS.o ils.o main.o   -O2 -DNBEVAL=10000  -DDIM=8 -DLARGEUR=20 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=10000  -DDIM=8 -DLARGEUR=20 »
+397.559 +- 0.406072279879933 (sd: 6.55159846468344) (max: 413)
+10000.0 +- 0.0 (sd: 0.0) (max: 10000)
+0.152605573s
+
+param = -DNBEVAL=10000  -DDIM=4 -DLARGEUR=25
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=10000  -DDIM=4 -DLARGEUR=25 »
+g++   -O2 -DNBEVAL=10000  -DDIM=4 -DLARGEUR=25 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DNBEVAL=10000  -DDIM=4 -DLARGEUR=25 -c ils.cpp -o ils.o 
+g++   -O2 -DNBEVAL=10000  -DDIM=4 -DLARGEUR=25 -c main.cpp -o main.o 
+g++ fastLS.o ils.o main.o   -O2 -DNBEVAL=10000  -DDIM=4 -DLARGEUR=25 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=10000  -DDIM=4 -DLARGEUR=25 »
+154.032 +- 0.313100380788734 (sd: 5.05158336509401) (max: 166)
+10000.0 +- 0.0 (sd: 0.0) (max: 10000)
+0.213822767s
+
+param = -DNBEVAL=100000  -DDIM=9 -DLARGEUR=10
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=100000  -DDIM=9 -DLARGEUR=10 »
+g++   -O2 -DNBEVAL=100000  -DDIM=9 -DLARGEUR=10 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DNBEVAL=100000  -DDIM=9 -DLARGEUR=10 -c ils.cpp -o ils.o 
+g++   -O2 -DNBEVAL=100000  -DDIM=9 -DLARGEUR=10 -c main.cpp -o main.o 
+g++ fastLS.o ils.o main.o   -O2 -DNBEVAL=100000  -DDIM=9 -DLARGEUR=10 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=100000  -DDIM=9 -DLARGEUR=10 »
+153.772 +- 0.0633009927353528 (sd: 1.0213026285382) (max: 157)
+100000.0 +- 0.0 (sd: 0.0) (max: 100000)
+0.400471187s
+
+param = -DNBEVAL=100000  -DDIM=8 -DLARGEUR=20
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=100000  -DDIM=8 -DLARGEUR=20 »
+g++   -O2 -DNBEVAL=100000  -DDIM=8 -DLARGEUR=20 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DNBEVAL=100000  -DDIM=8 -DLARGEUR=20 -c ils.cpp -o ils.o 
+g++   -O2 -DNBEVAL=100000  -DDIM=8 -DLARGEUR=20 -c main.cpp -o main.o 
+g++ fastLS.o ils.o main.o   -O2 -DNBEVAL=100000  -DDIM=8 -DLARGEUR=20 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=100000  -DDIM=8 -DLARGEUR=20 »
+413.08 +- 0.246379105493189 (sd: 3.97509765935398) (max: 424)
+100000.0 +- 0.0 (sd: 0.0) (max: 100000)
+1.111265324s
+
+param = -DNBEVAL=100000  -DDIM=4 -DLARGEUR=25
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=100000  -DDIM=4 -DLARGEUR=25 »
+g++   -O2 -DNBEVAL=100000  -DDIM=4 -DLARGEUR=25 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DNBEVAL=100000  -DDIM=4 -DLARGEUR=25 -c ils.cpp -o ils.o 
+g++   -O2 -DNBEVAL=100000  -DDIM=4 -DLARGEUR=25 -c main.cpp -o main.o 
+g++ fastLS.o ils.o main.o   -O2 -DNBEVAL=100000  -DDIM=4 -DLARGEUR=25 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=100000  -DDIM=4 -DLARGEUR=25 »
+165.586 +- 0.20857133438689 (sd: 3.3651044453223) (max: 175)
+100000.0 +- 0.0 (sd: 0.0) (max: 100000)
+1.713502181s
+
+param = -DNBEVAL=1000000  -DDIM=9 -DLARGEUR=10
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=1000000  -DDIM=9 -DLARGEUR=10 »
+g++   -O2 -DNBEVAL=1000000  -DDIM=9 -DLARGEUR=10 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DNBEVAL=1000000  -DDIM=9 -DLARGEUR=10 -c ils.cpp -o ils.o 
+g++   -O2 -DNBEVAL=1000000  -DDIM=9 -DLARGEUR=10 -c main.cpp -o main.o 
+g++ fastLS.o ils.o main.o   -O2 -DNBEVAL=1000000  -DDIM=9 -DLARGEUR=10 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=1000000  -DDIM=9 -DLARGEUR=10 »
+155.122 +- 0.0502683173512835 (sd: 0.811032535582747) (max: 158)
+1000000.0 +- 0.0 (sd: 0.0) (max: 1000000)
+4.467033266s
+
+param = -DNBEVAL=1000000  -DDIM=8 -DLARGEUR=20
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=1000000  -DDIM=8 -DLARGEUR=20 »
+g++   -O2 -DNBEVAL=1000000  -DDIM=8 -DLARGEUR=20 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DNBEVAL=1000000  -DDIM=8 -DLARGEUR=20 -c ils.cpp -o ils.o 
+g++   -O2 -DNBEVAL=1000000  -DDIM=8 -DLARGEUR=20 -c main.cpp -o main.o 
+g++ fastLS.o ils.o main.o   -O2 -DNBEVAL=1000000  -DDIM=8 -DLARGEUR=20 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=1000000  -DDIM=8 -DLARGEUR=20 »
+421.21 +- 0.189373281324689 (sd: 3.0553617192135) (max: 434)
+1000000.0 +- 0.0 (sd: 0.0) (max: 1000000)
+16.076338062s
+
+param = -DNBEVAL=1000000  -DDIM=4 -DLARGEUR=25
+rm -f *.o
+rm -f *~
+rm -f latinSquare
+make  OPT="-O2"
+make[1]: entrant dans le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=1000000  -DDIM=4 -DLARGEUR=25 »
+g++   -O2 -DNBEVAL=1000000  -DDIM=4 -DLARGEUR=25 -c fastLS.cpp -o fastLS.o 
+g++   -O2 -DNBEVAL=1000000  -DDIM=4 -DLARGEUR=25 -c ils.cpp -o ils.o 
+g++   -O2 -DNBEVAL=1000000  -DDIM=4 -DLARGEUR=25 -c main.cpp -o main.o 
+g++ fastLS.o ils.o main.o   -O2 -DNBEVAL=1000000  -DDIM=4 -DLARGEUR=25 -o latinSquare 
+make[1]: quittant le répertoire « /home/rimmel_arp/Research/LatinSquare/ILS/temp-DNBEVAL=1000000  -DDIM=4 -DLARGEUR=25 »
+171.775 +- 0.122469095200705 (sd: 1.97592491741951) (max: 178)
+1000000.0 +- 0.0 (sd: 0.0) (max: 1000000)
+22.100423261s
+

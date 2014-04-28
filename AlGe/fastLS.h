@@ -5,17 +5,29 @@
 #include<assert.h>
 #include<cmath>
 #include<cstring>
+#include<vector>
+#include<algorithm>
 
 using namespace std;
 
-#define DIM 4
-#define LARGEUR 22
+#ifndef DIM
+    #define DIM 4 
+#endif
+#ifndef LARGEUR
+    #define LARGEUR 25 
+#endif
 
 #define RECCORD_REP "reccord/"
 
 #define FAKESCORE
-#define SENDMAIL
+#define PHI         // FAKESCORE  must be defined
+//#define SENDMAIL
 
+#ifndef VALUE_P
+    #define VALUE_P 20 
+#endif
+
+extern int nbEval;
 
 class LS
 {
@@ -28,6 +40,7 @@ class LS
         double fakeScore;
 
         LS();
+        LS clone();
         string toString();
         void print();
         void reinit();
@@ -41,5 +54,17 @@ class LS
         short computeDist(const short [], const short []);
         short computeMinDist();
         double computeFakeScore();
+        double computeScorePhi();
+        double computeDistLS(LS other);
+        void computeScores();
         void mutate();
+        void mutate1();
+        void mutate2();
+        void mutate3();
+        void mutate4();
+        void mutateRand();
+
+        void mutateStrong();
+        short getARandomCriticalPoint();
+
 };
