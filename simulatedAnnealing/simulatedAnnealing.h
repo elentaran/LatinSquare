@@ -1,8 +1,8 @@
 #include"fastLS.h"
 
 #define NB_RESTARTS 1
-#define nbOfCycles 250
-#define nbOfCyclesPerTrial 4000
+#define nbOfCycles 25
+#define nbOfCyclesPerTrial 400
 float nbOfAcceptedSolutions = 0.0;
 
 //#define SLOW
