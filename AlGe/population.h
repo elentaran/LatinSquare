@@ -1,7 +1,7 @@
 #include "fastLS.h"
 
 #ifndef LAMBDA
-#define LAMBDA 200
+#define LAMBDA 20
 #endif
 
 #ifndef GEN
