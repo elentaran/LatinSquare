@@ -5,6 +5,10 @@ extern float percentGood;
 extern int nbRun;
 extern int probaKeep;
 
+#ifdef POINTS_PER_CURVE
+float limPPC=0;
+float incPPC=(NBEVAL)/POINTS_PER_CURVE;
+#endif
 
 Ils::Ils() {
     bestLS = LS();
@@ -64,6 +68,13 @@ LS Ils::localSearch(LS other) { // localsearch corresponding to the ILS paper
                         }
                         if (nbEval >= NBEVAL) 
                             return currentLS;
+#ifdef POINTS_PER_CURVE
+                        if (nbEval > limPPC) {
+                            cout << "Score: " << bestLS.score << endl;
+                            cout << "nb eval: " << nbEval << endl;
+                            limPPC += incPPC;
+                        }
+#endif
                     }
                 }
             }

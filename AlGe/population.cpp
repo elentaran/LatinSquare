@@ -1,5 +1,9 @@
 #include "population.h"
 
+#ifdef POINTS_PER_CURVE
+float limPPC=0;
+float incPPC=(GEN * LAMBDA * (DIM+1))/POINTS_PER_CURVE;
+#endif
 
 extern float percentBest;
 extern float percentGood;
@@ -75,6 +79,15 @@ void Pop::evolve()
                // cout<< " Score: "<<population[0].score << "(" << bestScore << ")"  << "(Fake: " << population[0].fakeScore << ")" <<endl;
 
 		}
+
+#ifdef POINTS_PER_CURVE
+        if (nbEval > limPPC) {
+            cout << "Score: " << bestScore << endl;
+            cout << "eval: " << nbEval << endl;
+            limPPC += incPPC;
+        }
+#endif
+
 
 #ifdef STAGN
 #ifdef FAKESCORE

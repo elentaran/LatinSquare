@@ -20,8 +20,8 @@ float SimulatedAnnealing::getEnergy() {
 }
 
 void SimulatedAnnealing::moveOperator() {
-	solution.mutate1();
-    //solution.mutate3();
+	//solution.mutate1();
+    solution.mutate3();
  /*	short lamut = rand()%4;
 	if (lamut==0)
  		solution.mutate1();
@@ -84,6 +84,13 @@ void SimulatedAnnealing::perform(int indiceRestart, float probaStart, float prob
 			if (xi.solution.score>xbest.solution.score)
 				xbest=xi.clone();
 
+#ifdef POINTS_PER_CURVE
+            if (nbEval > limPPC) {
+                cout << "nb eval: " << nbEval << endl;
+                cout << "Score: " << xbest.solution.score << endl;
+                limPPC += incPPC;
+            }
+#endif
 			deltaE = abs(xi.getEnergy() - fc);
 
 #ifdef FAKESCORE
@@ -132,7 +139,7 @@ void SimulatedAnnealing::perform(int indiceRestart, float probaStart, float prob
 
 		t = fractionalReduction * t;
 	}
-	xbest.print();
+	//xbest.print();
 }
 
 void SimulatedAnnealing::performWithRestart() {
@@ -149,6 +156,7 @@ int main() {
 
 	sa.performWithRestart();
     cout << "nbEval: " << nbEval << endl;
+    cout << "test:" << incPPC << endl;
 //	
 //	LS test;
 //	cout<<"Res : "<<test.checkeur("caca")<<endl;

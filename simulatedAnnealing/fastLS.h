@@ -16,11 +16,11 @@ using namespace std;
 #define RECCORD_REP "reccord/"
 
 #define FAKESCORE
-//#define PHI         // FAKESCORE  must be defined
+#define PHI         // FAKESCORE  must be defined
 //#define SENDMAIL
 
 #ifndef TEST
-    #define TEST 20
+    #define TEST 10
 #endif
 
 extern int nbEval;

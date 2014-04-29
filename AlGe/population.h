@@ -1,17 +1,21 @@
 #include "fastLS.h"
 
 #ifndef LAMBDA
-#define LAMBDA 20
+#define LAMBDA 200
 #endif
 
 #ifndef GEN
-#define GEN 200*(DIM+1)
-//#define GEN 500
+//#define GEN 200*(DIM+1)
+#define GEN 1000
 #endif
 
 #ifndef MUTATION
 #define MUTATION 3
 #endif
+
+
+#define POINTS_PER_CURVE 1000
+
 
 ///#define STAGN 1000
 //#define RESTART 5

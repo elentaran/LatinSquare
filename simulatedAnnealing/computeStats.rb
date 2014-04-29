@@ -4,7 +4,7 @@ require 'optparse'
 $options = {
     :nameProg => "./latinSquare",
     :nbrun => 100,
-    :keyWord => ["Score:","Fake","nbEval"],
+    :keyWord => ["Score:","eval"],
     :nbSignificantNumbers => 1
 }
 $options[:format] = "%." + $options[:nbSignificantNumbers].to_s + "f"

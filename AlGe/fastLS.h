@@ -24,7 +24,7 @@ using namespace std;
 //#define SENDMAIL
 
 #ifndef VALUE_P
-    #define VALUE_P 20 
+    #define VALUE_P 10 
 #endif
 
 extern int nbEval;
