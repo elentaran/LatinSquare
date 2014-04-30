@@ -14,7 +14,7 @@
 #endif
 
 
-#define POINTS_PER_CURVE 1000
+#define POINTS_PER_CURVE 100
 
 
 ///#define STAGN 1000

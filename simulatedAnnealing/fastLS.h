@@ -10,8 +10,12 @@
 
 using namespace std;
 
-#define DIM 4
-#define LARGEUR 25 
+#ifndef DIM
+    #define DIM 4 
+#endif
+#ifndef LARGEUR
+    #define LARGEUR 25 
+#endif
 
 #define RECCORD_REP "reccord/"
 

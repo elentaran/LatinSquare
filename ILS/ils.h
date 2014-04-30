@@ -8,7 +8,7 @@
     #define NBEVAL 1000000
 #endif
 
-#define POINTS_PER_CURVE 1000
+#define POINTS_PER_CURVE 100
 
 class Ils{
 

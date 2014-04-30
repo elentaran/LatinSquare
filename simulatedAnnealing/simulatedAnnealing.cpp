@@ -146,7 +146,7 @@ void SimulatedAnnealing::performWithRestart() {
 	for (int i=0; i<NB_RESTARTS; i++) {
 	//	float ratio = (i/(NB_RESTARTS))/2.;
 		float ratio = 0.;
-		perform(i, 0.3-ratio, 0.1-ratio);
+		perform(i, 0.3-ratio, 0.01-ratio);
 	}
 }
 
