@@ -1,7 +1,5 @@
 #include "ils.h"
 
-extern float percentBest;
-extern float percentGood;
 extern int nbRun;
 extern int probaKeep;
 

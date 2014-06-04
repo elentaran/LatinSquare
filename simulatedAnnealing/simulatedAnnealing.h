@@ -2,7 +2,7 @@
 
 #define NB_RESTARTS 1
 #define nbOfCycles 200 
-#define nbOfCyclesPerTrial 1000
+#define nbOfCyclesPerTrial 10000
 float nbOfAcceptedSolutions = 0.0;
 
 //#define SLOW

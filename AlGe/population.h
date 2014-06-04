@@ -6,7 +6,7 @@
 
 #ifndef GEN
 //#define GEN 200*(DIM+1)
-#define GEN 1000
+#define GEN 10000
 #endif
 
 #ifndef MUTATION

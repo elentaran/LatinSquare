@@ -5,7 +5,7 @@
 //
 
 #ifndef NBEVAL
-    #define NBEVAL 1000000
+    #define NBEVAL 10000000
 #endif
 
 #define POINTS_PER_CURVE 100
